@@ -47,3 +47,9 @@ exit 0
 
 ```
 
+添加执行权限  
+
+```shell
+chmod +x /usr/local/bin/my-script.sh
+```
+

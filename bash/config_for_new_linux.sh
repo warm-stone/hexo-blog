@@ -30,7 +30,7 @@ if ! grep -q "$ALIAS" /etc/profile; then
     echo "Adding alias to /etc/profile..."
     echo "$ALIAS" | tee -a /etc/profile
     echo "Alias added."
-else
+else123321
     echo "Alias already exists in /etc/profile."
 fi
 
