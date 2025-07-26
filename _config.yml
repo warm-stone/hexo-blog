@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://xxx.xx/hexo-blog/
+url: https://xxx.xx/
 #permalink: :year/:month/:day/:title/
 permalink: :title/
 permalink_defaults:
@@ -105,6 +105,6 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: appuser@centos9.name:~/git/hexo.git
+  repo: git@debian-n5105.home:~/git/hexo.git
   branch: master
   message: 笔记新增
