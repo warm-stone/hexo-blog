@@ -100,11 +100,11 @@ SQL分类：
        > 3. date 日期类型， 格式 yyyy-MM-dd
        > 4. datetime 日期，格式 yyyy-MMdd HH:mm:ss
        > 5. timestamp 时间戳，格式 yyyy-MMdd HH:mm:ss，不赋值默认为当前系统时间
-       > 6. varchar 字符串
+       > 6. varchar 字符串，长度为字符，与字节无关
             >
             >     name varchar(20)
             >
-            >     -- 张三 2字符 ， zhangsan 5字符
+            >     -- 张三 2字符 ， zhangsan 8字符
     >
     3. 示例
 
@@ -217,7 +217,7 @@ SQL分类：
 1. 主键约束：primary key
 2. 非空约束：not null
 3. 唯一约束：unique
-4. 外检约束：foreign key
+4. 外键约束：foreign key
 
 
 #### 非空约束：not null
