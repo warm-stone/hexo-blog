@@ -24,6 +24,6 @@ https://github.com/Aethersailor/Custom_OpenClash_Rules/tree/main/wiki
 
 部分个人观点：
 1. 个人习惯不设置`ipv6`代理，仅设置`dns`解析，以提高稳定性
-2. `DDNS` 域名污染问题使用自定义规则更灵活
+2. `DDNS` 域名污染问题使用自定义规则更灵活，可以解决混合使用 cloudflare `tunnel`、代理等访问问题 
 
 
