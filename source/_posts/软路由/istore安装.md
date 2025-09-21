@@ -16,37 +16,7 @@ tags:
     ```shell
     qm importdisk 100<虚拟机号> <磁盘文件路径> local-lvm
     ```
-
-# network文件
-
-```config
-config interface 'loopback'
-        option device 'lo'
-        option proto 'static'
-        option ipaddr '127.0.0.1'
-        option netmask '255.0.0.0'
-
-config globals 'globals'
-        option ula_prefix 'fdc9:6f90:39f6::/48'
-
-config device
-        option name 'br-lan'
-        option type 'bridge'
-        list ports 'eth0'
-
-config interface 'lan'
-        option device 'br-lan'
-        option proto 'static'
-        option ipaddr '192.168.100.1'
-        option netmask '255.255.255.0'
-        option ip6assign '60'
-
-config interface 'wan'
-        option proto 'dhcp'
-        option device 'eth1'
-
-config interface 'lan1'
-        option proto 'static'
-        option device 'eth3'
-        option ipaddr '192.168.101.1'
-```
+2. `quickstart`修改`ip`地址不生效,可能是脚本绑定设备错误，去配置文件修改 `/etc/network/` `/etc/config/`
+3. 通信问题注意仔细检查防火墙
+4. clash 使用 `nftables`
+5. 不要更新 `curl`，包已经被绑定了
