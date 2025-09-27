@@ -2,6 +2,7 @@
 title: oath2认证与无状态jwt冲突问题
 date: 2025-08-11 22:20:34
 categories:
+  - java
 tags:
   - web认证
   - oauth2
